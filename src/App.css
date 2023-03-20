@@ -16,6 +16,14 @@ body {
     overflow-x: hidden;
 }
 
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 20.3rem;
+    padding: 5rem;
+
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -28,8 +36,11 @@ nav {
     flex-direction: row;
     align-items: center;
     gap: 1.5rem;
-    background-color: #ededed;
     width: 100vw;
+}
+
+.nav-color {
+    background-color: rgba(178, 178, 178, 0.9);
 }
 
 nav a {
@@ -62,8 +73,7 @@ nav a:hover {
 
 #home {
     margin-top: 5rem;
-    height: 50rem;
-    padding: 20px;
+    height: 22rem;
     font-weight: 100;
 }
 
@@ -100,23 +110,44 @@ nav a:hover {
 }
 
 #about {
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: 100;
 }
 
 .about-flex {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    gap: 3rem;
+    text-align: center;
+    width: 60%;
 }
 
-.about-and-skills {
+.dev-skills {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
-/* 20px padding and */
+.skill {
+    border: 3px solid rgba(178, 178, 178, 0.9);
+    width: 100px;
+    height: 100px;
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill img {
+    width: 5vw;
+    border-radius: 15px;
+}
+
+/* background-color: rgba(178, 178, 178, 0.9) */

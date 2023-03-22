@@ -72,6 +72,8 @@ nav a:hover {
 }
 
 #home {
+    display: flex;
+    flex-direction: row;
     margin-top: 5rem;
     height: 22rem;
     font-weight: 100;
@@ -85,10 +87,24 @@ nav a:hover {
     font-size: 2rem;
 }
 
+#home img {
+    height: 40vh;
+    width: 22vw;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px 0px rgba(178, 178, 178, 0.8);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(178, 178, 178, 0.8);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(178, 178, 178, 0.8);
+}
+
 .home-flex {
     display: flex;
     flex-direction: column;
-    width: 31%;
+    width: 40%;
+}
+
+.heading-txt {
+    display: flex;
+    flex-direction: column;
 }
 
 .contact-btn {
@@ -110,10 +126,13 @@ nav a:hover {
 }
 
 #about {
+    padding: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 100;
+    font-weight: 300;
+    background-color: rgba(178, 178, 178, 0.1);
+    border-radius: 30% 30% 30% 30% / 20% 80% 20% 80%;
 }
 
 .about-flex {
@@ -121,7 +140,7 @@ nav a:hover {
     flex-direction: column;
     gap: 3rem;
     text-align: center;
-    width: 60%;
+    width: 70%;
 }
 
 .dev-skills {
@@ -138,7 +157,7 @@ nav a:hover {
     width: 100px;
     height: 100px;
     padding: 15px;
-    border-radius: 15px;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -147,7 +166,33 @@ nav a:hover {
 
 .skill img {
     width: 5vw;
-    border-radius: 15px;
 }
 
+#projects {
+    height: 50rem;
+    width: 100%;
+    padding: 100px;
+}
+
+#projects img {
+    width: 30vw;
+    border: 1px solid black;
+}
+
+#all-proj {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.proj-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 40%;
+}
 /* background-color: rgba(178, 178, 178, 0.9) */

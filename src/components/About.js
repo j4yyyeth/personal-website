@@ -27,6 +27,10 @@ const About = () => {
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt='express'/>
               </div>
               <div className="skill">
+                <h3>NextJS</h3>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt='next'/>
+              </div>
+              <div className="skill">
                 <h3>MongoDB</h3>
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt='mongo'/>
               </div>
@@ -48,20 +52,4 @@ const About = () => {
     )
   }
 
-  // REACT: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt='react'/>
-  // TYPESCRIPT: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt='ts'/>
-  // NODE: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt='node'/>
-  // EXPRESS: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt='express'/>
-  // MONGO: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt='mongo'/>
-  // HTML: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt='HTML'/>
-  // CSS: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt='CSS'/>
-  // TAILWIND: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt='tailwind'/>
-
-          
-          
-          
-          
-
-
-  
-  export default About;
+export default About;

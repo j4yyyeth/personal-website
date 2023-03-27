@@ -21,7 +21,6 @@ section {
     flex-direction: column;
     gap: 20.3rem;
     padding: 5rem;
-
 }
 
 a {
@@ -74,6 +73,8 @@ nav a:hover {
 #home {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     margin-top: 5rem;
     height: 22rem;
     font-weight: 100;
@@ -126,7 +127,7 @@ nav a:hover {
 }
 
 #about {
-    padding: 2rem;
+    padding: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,14 +170,14 @@ nav a:hover {
 }
 
 #projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     height: 50rem;
     width: 100%;
-    padding: 100px;
-}
-
-#projects img {
-    width: 30vw;
-    border: 1px solid black;
+    /* margin-top: 15rem; */
 }
 
 #all-proj {
@@ -184,7 +185,11 @@ nav a:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    gap: 20px;
+}
+
+.proj-img {
+    width: 28vw;
 }
 
 .proj-card {
@@ -193,6 +198,35 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     border: 1px solid black;
-    width: 40%;
+    border-radius: 20px;
 }
+
+.web-img {
+    width: 3vw;
+}
+
+.git-img {
+    width: 3vw;
+}
+
+.proj-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+  
 /* background-color: rgba(178, 178, 178, 0.9) */

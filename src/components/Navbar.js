@@ -16,7 +16,7 @@ const Navbar = () => {
     window.addEventListener('scroll', changeColor)
     return (
         <nav id="nav" className={color ? 'nav-color' : 'no-color'}>
-            <Link className='logo-box' to='#home' smooth><img className='logo' src={require('../logo.png')} alt='logo'/></Link>
+            <Link className='logo-box' to='#blank' smooth><img className='logo' src={require('../logo.png')} alt='logo'/></Link>
             <Link to='#about' smooth>About</Link>
             <Link to='#projects' smooth>Projects</Link>
             <Link to='#contact' smooth>Contact</Link>

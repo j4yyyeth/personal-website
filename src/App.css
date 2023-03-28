@@ -70,6 +70,13 @@ nav a:hover {
     align-items: center;
 }
 
+.mail-img {
+    width: 35px;
+    margin-bottom: 3.5px;
+    padding-right: 3px;
+    padding-left: 3px;
+}
+
 #home {
     display: flex;
     flex-direction: row;
@@ -218,15 +225,119 @@ nav a:hover {
 }
 
 #contact {
+    margin-top: 12rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 7rem;
+    padding: 6rem;
+    height: 20rem;
+    background-color: rgb(154, 154, 154, 0.5);
+    box-shadow: 0px 10px 30px -10px rgba(0,0,0,0.85);
 }
 
 form {
     display: flex;
     flex-direction: column;
-}
+    gap: 20px;
+    max-width: 500px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input,
+  textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #c5c5c5;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: none;
+    border-color: #000000;
+  }
+
+  .send-btn:hover {
+    background-color: #EB0404;
+  }
+
+  .send-btn {
+    padding: 15px 40px;
+    background: #FF3333;;
+    border:0;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: helvetica;
+    font-size: 12px;
+    letter-spacing: 3px;
+    position: relative;
+    transition:         all .4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    cursor: pointer;
+    display: block;
+  }
+  
+  .send-btn::after,
+  .send-btn::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+      opacity: 0;
+    transition: all .4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+  
+  .send-btn::after{
+      width: 30px;
+      height: 1px;
+      background: white;
+      transform: translateX(-3px);
+      margin-top: 0px;
+  }
+  
+  .send-btn::before{
+      content: "";
+      transform: rotate(-135deg) translateX(50%);
+      width: 11px;
+      height: 11px;
+      background: transparent;
+      border-left: 1px solid white;
+      border-bottom: 1px solid white;
+    margin-top: -1px;
+  }
+  
+  
+  .send-btn:hover{
+    padding: 15px 60px 15px 20px;
+  }
+  
+  .send-btn:hover::after,
+  .send-btn:hover::before{
+    opacity: 1;
+    right: 15px;
+  }
+
+  .sent-btn {
+    padding: 15px 40px;
+    background: #EB0404;
+    border:0;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: helvetica;
+    font-size: 12px;
+    letter-spacing: 3px;
+    position: relative;
+    transition:         all .4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    cursor: pointer;
+    display: block;
+  }
+  
   
 /* background-color: rgba(178, 178, 178, 0.9) */

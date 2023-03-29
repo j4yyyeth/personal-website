@@ -16,7 +16,10 @@ const Contact = () => {
 
   return (
     <div id="contact">
-      <form ref={form} onSubmit={handleSubmit}> 
+      <form ref={form} onSubmit={handleSubmit}>
+      { sent ? <></>
+      :
+      <>
         <div className="form-group">
           <label>Name:</label>
           <input type="text" name="name" required />
@@ -29,7 +32,14 @@ const Contact = () => {
           <label>Message:</label>
           <textarea type="text" name="message" required></textarea>
         </div>
-        <button className={sent ? 'sent-btn' : 'send-btn' } type="submit" value="send">{sent ? 'Thank you' : 'Send'}</button>
+        </>
+      }
+      { sent ?
+          <button className='sent-btn' disabled>Thank you</button>
+          :
+          <button className='send-btn' type="submit" value="send">Send</button>
+      }
+        {sent ? <div className="typing-demo">I'll get back to you soon!</div> : <></>}
       </form>
     </div>
   )

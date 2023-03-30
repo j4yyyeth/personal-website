@@ -14,6 +14,17 @@ body {
     background-color: #ededed;
     font-family: 'Khula', sans-serif;
     overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body:focus {
+  outline: none !important;
 }
 
 section {
@@ -195,16 +206,31 @@ nav a:hover {
 }
 
 .proj-img {
-    width: 28vw;
+    width: 31vw;
 }
 
 .proj-card {
+  padding: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    border: 1px solid #cbcbcb;
     border-radius: 20px;
+}
+
+.tech-used {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.tech-used p {
+  padding: 5px;
+  background-color: #000000;
+  color: white;
+  border-radius: 5px;
 }
 
 .web-img {
@@ -392,6 +418,8 @@ form {
     height: 35px;
   }
 
+  /* MEDIA QUERIES */   /* MEDIA QUERIES */   /* MEDIA QUERIES */   /* MEDIA QUERIES */   /* MEDIA QUERIES */
+
   @media screen and (max-width: 1200px) {
     section {
       padding: 50px;
@@ -412,7 +440,7 @@ form {
   
       #home img {
           height: 28vh;
-          width: 33vw;
+          width: 30vw;
       }
   
       .home-flex {
@@ -470,6 +498,7 @@ form {
 
   section {
     padding: 30px;
+    gap: 5rem
   }
 
     #home {
@@ -505,6 +534,7 @@ form {
 
     #about {
       font-size: .6rem;
+      margin-bottom: 5rem;
     }
 
     .skill {
@@ -534,6 +564,21 @@ form {
   font-size: .5rem;
 }
 
+}
+
+@media screen and (max-width: 600px) and (orientation: landscape) {
+  section {
+    padding: 20px;
+  }
+
+  #home {
+    height: 50vh;
+  }
+
+  #home img {
+    height: 40vh;
+    width: 40vw;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -574,25 +619,10 @@ form {
     }
 }
 
-@media screen and (max-width: 600px) and (orientation: landscape) {
-  section {
-    padding: 20px;
-  }
-
-  #home {
-    height: 50vh;
-  }
-
-  #home img {
-    height: 40vh;
-    width: 40vw;
-  }
-}
-
 @media screen and (max-width: 462px) {
   section {
     padding: 20px;
-    gap: 7rem;
+    gap: 3rem;
   }
 
 #home h1 {
@@ -651,8 +681,12 @@ font-size: .5rem;
 
 @media only screen and (max-width: 768px) {
   #projects {
+    padding-top: 5rem;
+    display: flex;
     flex-direction: column;
-    height: auto;
+    justify-content: center;
+    align-items: center;
+    /* height: auto; */
     gap: 10px;
   }
 
@@ -660,14 +694,48 @@ font-size: .5rem;
     width: 80%;
   }
 
-  .proj-card {
-    width: 80%;
-  }
 
   .web-img,
   .git-img {
     width: 5vw;
   }
+
+#all-proj {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.proj-img {
+    width: 50vw;
+}
+
+.proj-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.web-img {
+    width: 5vw;
+}
+
+.git-img {
+    width: 5vw;
+}
+
+.proj-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
 }
 
 /* Media queries for mobile view */

@@ -3,7 +3,7 @@ const Projects = () => {
     <div id="projects">
       <div id="all-proj">
         <div className="proj-card">
-        <h1>Pragto</h1>
+        <h2>Pragto</h2>
           <img className="proj-img" src={require("../pragto.jpg")} alt="pragto"/>
           <p>A gamified to-do app</p>
           <div className="proj-links">
@@ -20,7 +20,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="proj-card">
-        <h1>Pragto</h1>
+        <h2>Pragto</h2>
           <img className="proj-img" src={require("../pragto.jpg")} alt="pragto"/>
           <p>A gamified to-do app</p>
           <div className="proj-links">
@@ -37,7 +37,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="proj-card">
-        <h1>Pragto</h1>
+        <h2>Pragto</h2>
           <img className="proj-img" src={require("../pragto.jpg")} alt="pragto"/>
           <p>A gamified to-do app</p>
           <div className="proj-links">

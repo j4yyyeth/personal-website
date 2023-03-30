@@ -184,7 +184,6 @@ nav a:hover {
     gap: 20px;
     height: 50rem;
     width: 100%;
-    /* margin-top: 15rem; */
 }
 
 #all-proj {
@@ -392,3 +391,302 @@ form {
     width: 40px;
     height: 35px;
   }
+
+  @media screen and (max-width: 1200px) {
+    section {
+      padding: 50px;
+    }
+  
+      #home {
+          margin-top: 3rem;
+          gap: 50px;
+      }
+  
+      #home h1 {
+      font-size: 2.8rem;
+      }
+  
+      #home h2 {
+          font-size: 1.7rem;
+      }
+  
+      #home img {
+          height: 28vh;
+          width: 33vw;
+      }
+  
+      .home-flex {
+          width: 70%;
+      }
+  
+      .heading-txt {
+          margin-top: 1rem;
+      }
+  
+      .contact-btn {
+          font-size: 14px;
+          width: 70px;
+      }
+
+      #about {
+        font-size: .8rem;
+      }
+
+      .about-flex {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+        width: 80%;
+    }
+    
+  }
+
+  @media screen and (max-width: 956px) {
+
+    #about {
+      font-size: .7rem;
+    }
+
+    .skill {
+      border: 3px solid rgba(178, 178, 178, 0.9);
+      width: 5vw;
+      height: 5.2vh;
+      padding: 12px;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .skill img {
+    width: 4vw;
+  }
+
+  }
+
+@media screen and (max-width: 768px) {
+
+  section {
+    padding: 30px;
+  }
+
+    #home {
+        margin-top: 3rem;
+        gap: 50px;
+    }
+
+    #home h1 {
+    font-size: 2rem;
+    }
+
+    #home h2 {
+        font-size: 1.2rem;
+    }
+
+    #home img {
+        height: 30vh;
+        width: 40vw;
+    }
+
+    .home-flex {
+        width: 80%;
+    }
+
+    .heading-txt {
+        margin-top: 1rem;
+    }
+
+    .contact-btn {
+        font-size: 14px;
+        width: 70px;
+    }
+
+    #about {
+      font-size: .6rem;
+    }
+
+    .skill {
+      border: 2px solid rgba(178, 178, 178, 0.9);
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  #about {
+    font-size: .5rem;
+  }
+
+  .skill {
+    border: 2px solid rgba(178, 178, 178, 0.9);
+    width: 3vw;
+    height: 2vh;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill h3 {
+  font-size: .5rem;
+}
+
+}
+
+@media screen and (max-width: 500px) {
+
+  section {
+    padding: 20px;
+  }
+
+    #home {
+        margin-top: 3rem;
+        gap: 50px;
+    }
+
+    #home h1 {
+    font-size: 1.7rem;
+    }
+
+    #home h2 {
+        font-size: 1rem;
+    }
+
+    #home img {
+        height: 25vh;
+        width: 38vw;
+    }
+
+    .home-flex {
+        width: 100%;
+    }
+
+    .heading-txt {
+        margin-top: 1rem;
+    }
+
+    .contact-btn {
+        font-size: 14px;
+        width: 70px;
+    }
+}
+
+@media screen and (max-width: 600px) and (orientation: landscape) {
+  section {
+    padding: 20px;
+  }
+
+  #home {
+    height: 50vh;
+  }
+
+  #home img {
+    height: 40vh;
+    width: 40vw;
+  }
+}
+
+@media screen and (max-width: 462px) {
+  section {
+    padding: 20px;
+    gap: 7rem;
+  }
+
+#home h1 {
+font-size: 1.2rem;
+}
+
+#home h2 {
+    font-size: .9rem;
+}
+
+#home img {
+    height: 25vh;
+    width: 36vw;
+}
+
+.home-flex {
+    width: 100%;
+}
+
+.heading-txt {
+    margin-top: 1rem;
+}
+
+.contact-btn {
+    font-size: 14px;
+    width: 70px;
+}
+
+#about {
+  font-size: .5rem;
+  border-radius: 20% 20% 20% 20% / 20% 20% 20% 20%;
+  padding: 10px;
+}
+
+.skill {
+  border: 2px solid rgba(178, 178, 178, 0.9);
+  width: 4vw;
+  height: 2.5vh;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill h3 {
+font-size: .5rem;
+}
+
+.about-flex {
+  width: 100%;
+}
+
+}
+
+@media only screen and (max-width: 768px) {
+  #projects {
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+  }
+
+  .proj-img {
+    width: 80%;
+  }
+
+  .proj-card {
+    width: 80%;
+  }
+
+  .web-img,
+  .git-img {
+    width: 5vw;
+  }
+}
+
+/* Media queries for mobile view */
+@media only screen and (max-width: 480px) {
+  .proj-img {
+    width: 100%;
+  }
+
+  .proj-card {
+    width: 100%;
+  }
+
+  .web-img,
+  .git-img {
+    width: 10vw;
+  }
+}
+
+
+
+
+

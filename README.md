@@ -1,3 +1,3 @@
 # My Personal Website
 
-This website tells you a bit about myself, shows some of my projects, and includes a contact form where you can send me a message!
+Give this website a look to learn a little bit about me, view my projects, and get in contact!

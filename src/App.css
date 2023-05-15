@@ -33,6 +33,7 @@ nav {
     align-items: center;
     gap: 1.5rem;
     width: 100vw;
+    z-index: 100;
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -58,6 +59,7 @@ nav a {
 nav a:hover {
     background-color: #eb0404;
     color: #F8FFFB;
+    transition: .4s;
 }
 
 .logo {
@@ -143,8 +145,9 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     font-weight: 300;
-    background-color: rgba(178, 178, 178, 0.1);
+    background-color: rgba(178, 178, 178, 0.3);
     border-radius: 30% 30% 30% 30% / 20% 80% 20% 80%;
+    animation: borderChange 3s infinite;
 }
 
 .about-flex {
@@ -174,28 +177,39 @@ nav a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: transform 0.4s ease-in-out;
+}
+
+.skill:hover {
+  transform: scale(1.2);
 }
 
 .skill img {
     width: 5vw;
 }
 
+@keyframes borderChange {
+  0% { border-radius: 30% 30% 30% 30% / 20% 80% 20% 80%; }
+  50% { border-radius: 20% 20% 20% 20% / 10% 90% 10% 90%; }
+  100% { border-radius: 30% 30% 30% 30% / 20% 80% 20% 80%; }
+}
+
 #projects {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    height: 50rem;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 50rem;
+  width: 100%;
 }
 
 #all-proj {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .proj-img {
@@ -203,13 +217,13 @@ nav a:hover {
 }
 
 .proj-card {
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #cbcbcb;
-    border-radius: 20px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #cbcbcb;
+  border-radius: 20px;
 }
 
 .tech-used {
@@ -241,6 +255,36 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     gap: 15px;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container:hover .overlay {
+  opacity: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
 }
 
 #contact {
@@ -495,7 +539,6 @@ form {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      border: 1px solid black;
       border-radius: 20px;
   }
   

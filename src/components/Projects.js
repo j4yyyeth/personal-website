@@ -15,7 +15,7 @@ const Projects = () => {
         <div className="image-container">
           <img className="proj-img" src={require("../vigym.jpg")} alt="vigym"/>
           <div className="overlay">
-            <a href="https://vigym.netlify.app" className="text">Read More →</a>
+            <Link to='/vigym'>Read More →</Link>
           </div>
         </div>
           <p>A full stack fitness web-app</p>
@@ -36,7 +36,12 @@ const Projects = () => {
         </div>
         <div className="proj-card">
         <h2>Pragto</h2>
+        <div className="image-container">
           <img className="proj-img" src={require("../pragto.jpg")} alt="pragto"/>
+          <div className="overlay">
+            <Link to='/pragto'>Read More →</Link>
+          </div>
+        </div>
           <p>A gamified to-do app</p>
           <div className="proj-links">
             <a href="https://pragto.netlify.app" target="_blank" rel="noreferrer"><img className="web-img" src={require("../internet.png")} alt="website"/></a>
@@ -52,20 +57,23 @@ const Projects = () => {
           </div>
         </div>
         <div className="proj-card">
-        <h2>Pragto</h2>
-          <img className="proj-img" src={require("../pragto.jpg")} alt="pragto"/>
-          <p>A gamified to-do app</p>
+        <h2>Buccaneer Barrage</h2>
+        <div className="image-container">
+          <img className="proj-img" src={require("../bb.jpg")} alt="buccaneer barrage"/>
+          <div className="overlay">
+            <Link to='/buccaneerbarrage'>Read More →</Link>
+          </div>
+        </div>
+          <p>A pirate shooter game</p>
           <div className="proj-links">
-            <a href="https://google.com" target="_blank" rel="noreferrer"><img className="web-img" src={require("../internet.png")} alt="website"/></a>
-            <a href="https://google.com" target="_blank" rel="noreferrer"><img className="git-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github" /></a>
+            <a href="https://j4yyyeth.github.io/pirate-game/" target="_blank" rel="noreferrer"><img className="web-img" src={require("../internet.png")} alt="website"/></a>
+            <a href="https://github.com/j4yyyeth/pirate-game" target="_blank" rel="noreferrer"><img className="git-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github" /></a>
           </div>
           <div className="tech-used">
             <p>Javascript</p>
-            <p>React</p>
-            <p>NodeJs</p>
-            <p>Express</p>
-            <p>MongoDB</p>
+            <p>HTML</p>
             <p>CSS</p>
+            <p>Canvas</p>
           </div>
         </div>
       </div>

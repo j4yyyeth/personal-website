@@ -281,7 +281,7 @@ nav a:hover {
   opacity: 100%;
 }
 
-.text {
+.overlay a {
   color: white;
   font-size: 30px;
   text-decoration: none;
@@ -461,6 +461,38 @@ form {
     border: none;
     margin-bottom: 6px;
   }
+
+  .proj-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 0 20px; /* Add padding to make sure text doesn't touch the edges on smaller screens */
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 10px; /* Add space between title and subtitle */
+  }
+  
+  .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 10px; /* Add space between subtitle and description */
+  }
+  
+  .description {
+    font-size: 1rem;
+  }
+  
+  .back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+  }  
 
   /* MEDIA QUERIES */
 

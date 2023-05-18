@@ -35,13 +35,13 @@ const Projects = () => {
           </div>
         </div>
         <div className="proj-card">
-        <h2>Pragto</h2>
-        <div className="image-container">
-          <img className="proj-img" src={require("../pragto.jpg")} alt="pragto"/>
-          <div className="overlay">
-            <Link to='/pragto'>Read More →</Link>
+          <h2>Pragto</h2>
+          <div className="image-container">
+            <img className="proj-img" src={require("../pragto.jpg")} alt="pragto"/>
+            <div className="overlay">
+              <Link to='/pragto'>Read More →</Link>
+            </div>
           </div>
-        </div>
           <p>A gamified to-do app</p>
           <div className="proj-links">
             <a href="https://pragto.netlify.app" target="_blank" rel="noreferrer"><img className="web-img" src={require("../internet.png")} alt="website"/></a>
@@ -57,13 +57,13 @@ const Projects = () => {
           </div>
         </div>
         <div className="proj-card">
-        <h2>Buccaneer Barrage</h2>
-        <div className="image-container">
-          <img className="proj-img" src={require("../bb.jpg")} alt="buccaneer barrage"/>
-          <div className="overlay">
-            <Link to='/buccaneerbarrage'>Read More →</Link>
+          <h2>Buccaneer Barrage</h2>
+          <div className="image-container">
+            <img className="proj-img" src={require("../bb.jpg")} alt="buccaneer barrage"/>
+            <div className="overlay">
+              <Link to='/buccaneerbarrage'>Read More →</Link>
+            </div>
           </div>
-        </div>
           <p>A pirate shooter game</p>
           <div className="proj-links">
             <a href="https://j4yyyeth.github.io/pirate-game/" target="_blank" rel="noreferrer"><img className="web-img" src={require("../internet.png")} alt="website"/></a>

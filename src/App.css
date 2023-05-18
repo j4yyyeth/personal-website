@@ -26,6 +26,7 @@ a {
 }
 
 nav {
+  width: 100%;
     position: sticky;
     top: 0;
     display: flex;
@@ -158,6 +159,10 @@ nav a:hover {
     width: 70%;
 }
 
+.about-text {
+  font-size: calc(12px + 0.5vw); /* adjust as needed */
+}
+
 .dev-skills {
     display: flex;
     flex-direction: row;
@@ -222,14 +227,13 @@ nav a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid #cbcbcb;
   border-radius: 20px;
 }
 
 .tech-used {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 5px;
 }
 
@@ -469,17 +473,17 @@ form {
     align-items: center;
     height: 100vh;
     text-align: center;
-    padding: 0 20px; /* Add padding to make sure text doesn't touch the edges on smaller screens */
+    padding: 0 20px;
   }
   
   .title {
     font-size: 2rem;
-    margin-bottom: 10px; /* Add space between title and subtitle */
+    margin-bottom: 10px;
   }
   
   .subtitle {
     font-size: 1.5rem;
-    margin-bottom: 10px; /* Add space between subtitle and description */
+    margin-bottom: 10px;
   }
   
   .description {
@@ -492,6 +496,7 @@ form {
     left: 10px;
     padding: 10px 20px;
     font-size: 1rem;
+    cursor: pointer;
   }  
 
   /* MEDIA QUERIES */
@@ -502,8 +507,8 @@ form {
     }
   
       #home {
-          margin-top: 3rem;
-          gap: 50px;
+        margin-top: 3rem;
+        gap: 50px;
       }
   
       #home h1 {
@@ -511,25 +516,25 @@ form {
       }
   
       #home h2 {
-          font-size: 1.7rem;
+        font-size: 1.7rem;
       }
   
       #home img {
-          height: 28vh;
-          width: 30vw;
+        height: 28vh;
+        width: 30vw;
       }
   
       .home-flex {
-          width: 70%;
+        width: 70%;
       }
   
       .heading-txt {
-          margin-top: 1rem;
+        margin-top: 1rem;
       }
   
       .contact-btn {
-          font-size: 14px;
-          width: 70px;
+        font-size: 14px;
+        width: 70px;
       }
 
       #about {
@@ -537,11 +542,11 @@ form {
       }
 
       .about-flex {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-        text-align: center;
-        width: 80%;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      text-align: center;
+      width: 80%;
     }
 
     #projects {
@@ -665,7 +670,7 @@ form {
 @media screen and (max-width: 600px) {
 
   #about {
-    font-size: .5rem;
+    font-size: .7rem;
   }
 
   .skill {
@@ -824,7 +829,6 @@ font-size: .5rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
   border-radius: 20px;
 }
 
@@ -842,6 +846,7 @@ width: 9vw;
 }
 
 .tech-used p {
+  font-size: 12px;
   padding: 1px;
 }
 

@@ -1,6 +1,6 @@
 const Blank = () => {
   return (
-    <div id="blank"></div>
+    <div id="main"></div>
   )
 }
 

@@ -850,4 +850,8 @@ width: 9vw;
   padding: 1px;
 }
 
+.description {
+  font-size: smaller;
+}
+
 }

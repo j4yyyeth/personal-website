@@ -19,6 +19,7 @@ const Projects = () => {
           </div>
         </div>
           <p>A full stack fitness web-app</p>
+          <p>Demo User: username: <b>test1</b>, password: <b>123</b></p>
           <div className="proj-links">
             <a href="https://vigym.netlify.app" target="_blank" rel="noreferrer"><img className="web-img" src={require("../internet.png")} alt="website"/></a>
             <button className="transparent-btn" onClick={()=>twoLinks('https://github.com/j4yyyeth/vigym-client' , 'https://github.com/j4yyyeth/vigym-server')}><img className="git-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github" /></button>
@@ -43,6 +44,7 @@ const Projects = () => {
             </div>
           </div>
           <p>A gamified to-do app</p>
+          <p>Demo User: email: <b>test1@test.com</b>, password: <b>123</b></p>
           <div className="proj-links">
             <a href="https://pragto.netlify.app" target="_blank" rel="noreferrer"><img className="web-img" src={require("../internet.png")} alt="website"/></a>
             <button className="transparent-btn" onClick={()=>twoLinks('https://github.com/j4yyyeth/pragto-client' , 'https://github.com/j4yyyeth/pragto-server')}><img className="git-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github" /></button>

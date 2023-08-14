@@ -9,6 +9,7 @@ body {
     overflow-x: hidden;
 }
 
+
 body:focus {
   outline: none !important;
 }
@@ -45,7 +46,8 @@ nav {
 }
 
 .nav-color {
-    background-color: rgba(178, 178, 178, 0.9);
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
 }
 
 nav a {
@@ -102,13 +104,15 @@ nav a:hover {
     font-size: 2rem;
 }
 
-#home img {
-    height: 40vh;
-    width: 22vw;
-    border-radius: 10px;
-    box-shadow: 10px 10px 5px 0px rgba(178, 178, 178, 0.8);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(178, 178, 178, 0.8);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(178, 178, 178, 0.8);
+.profile-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px 0px rgba(178, 178, 178, 0.8);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(178, 178, 178, 0.8);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(178, 178, 178, 0.8);
+  object-fit: cover;
 }
 
 .home-flex {
@@ -667,7 +671,19 @@ form {
 
 }
 
+@media screen and (max-width: 768px) {
+  #home img {
+    height: 30vh;
+    width: 40vw;
+  }
+}
+
 @media screen and (max-width: 600px) {
+
+  #home img {
+    height: 25vh;
+    width: 35vw;
+  }
 
   #about {
     font-size: .7rem;
@@ -726,8 +742,8 @@ form {
     }
 
     #home img {
-        height: 25vh;
-        width: 38vw;
+        height: 20vh;
+        width: 45vw;
     }
 
     .home-flex {
@@ -759,8 +775,8 @@ font-size: 1.2rem;
 }
 
 #home img {
-    height: 25vh;
-    width: 36vw;
+    height: 20vh;
+    width: 40vw;
 }
 
 .home-flex {
